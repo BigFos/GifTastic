@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Favorite Movies</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Movie Gif Search</h1>
+        <p>Click the movie button to see 10 paused gifs related to it.</p>
+        <p>To animate the gif click on it.</p>
+        <p>To pause it again, click it again.</p>
+        <p>You can add a button for your favorite movie by typing the name of it into the field below and click "Add a Movie"</p>
+        <div id="movies-view"></div>
+        <div id="buttons-view"></div>
+        <form id="movie-form">
+            <label for="movie-input">Add a Movie</label>
+            <input type="text" id="movie-input">
+            <br>
+            <input id="add-movie" type="submit" value="Add a Movie">
+        </form>
+        <div id="gifs-appear-here"></div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+
+</html>
