@@ -4,3 +4,15 @@ form,
 input {
     margin: 10px;
 }
+body{
+	background-image: url("../images/starring.png");
+}
+.text,
+button,
+p{
+	color: white;
+	font-family: 'Abril Fatface', cursive;
+}
+#add-movie{
+	font-family: 'Indie Flower', cursive;
+}

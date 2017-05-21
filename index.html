@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Indie+Flower" rel="stylesheet"
 </head>
 
 <body>
     <div class="container">
-        <h1>Movie Gif Search</h1>
+        <h1 class="text"><strong>Movie Gif Search</strong></h1>
         <p>Click the movie button to see 10 paused gifs related to it.</p>
         <p>To animate the gif click on it.</p>
         <p>To pause it again, click it again.</p>
@@ -19,10 +20,10 @@
         <div id="movies-view"></div>
         <div id="buttons-view"></div>
         <form id="movie-form">
-            <label for="movie-input">Add a Movie</label>
+            <label class="text" for="movie-input">Add a Movie</label>
             <input type="text" id="movie-input">
             <br>
-            <input id="add-movie" type="submit" value="Add a Movie">
+            <input class="btn btn-success" id="add-movie" type="submit" value="Add a Movie">
         </form>
         <div id="gifs-appear-here"></div>
     </div>

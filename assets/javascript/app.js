@@ -3,7 +3,7 @@ var movies = ["Aladdin", "Tommy Boy", "Frozen", "The Lion King"];
 function displayMovieInfo() {
     var person = $(this).attr("data-name");
     $("#gifs-appear-here").empty();
-    var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=dc6zaTOxFJmzC&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + person + "&api_key=dc6zaTOxFJmzC&limit=10";
     $.ajax({
             url: queryURL,
             method: "GET"
@@ -45,7 +45,7 @@ function renderButtons() {
     $("#buttons-view").empty();
     for (var i = 0; i < movies.length; i++) {
         var a = $("<button>");
-        a.addClass("movie");
+        a.addClass("movie btn btn-primary");
         a.attr("data-name", movies[i]);
         a.text(movies[i]);
         $("#buttons-view").append(a);
@@ -58,6 +58,7 @@ $("#add-movie").on("click", function(event) {
     movies.push(movie);
     console.log(movies)
     renderButtons();
+    $("#movie-input").val("");
 });
 
 $(document).on("click", ".movie", displayMovieInfo);
